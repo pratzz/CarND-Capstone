@@ -24,6 +24,20 @@ Following the state-of-car architecture for self-driving cars, Carla's archictur
 ![alt text][image1]
 
 ## Perception
+### Traffic Light Detection
+ The detector tries to find the closest traffic light to the car, classify it's state(RED, YELLOW, GREEN) and in case of a RED light, it publishes it's waypoint to /traffic_waypoint. 
+#### Dataset
+The original data is raw without labels or annotations, we found this dataset where the images were annotated and converted to TFRecord, hence we used it to train the object detector The data can be found [here](https://github.com/vatsl/TrafficLight_Detection-TensorFlowAPI#get-the-dataset). We have trained only for simulator data but same can be done for real data.
+
+#### Training
+Model used : ssd_inception_v2_coco_2018_01_28 </br>
+Tensorflow version: 1.15(GPU) </br>
+Steps to train: https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1.md </br>
+Pipeline Config (Tensorflow Object Detection API) used: https://github.com/jnsagai/Traffic_Light_Detector/blob/main/traffic_light_classification.config </br>
+Label Map Used: https://github.com/jnsagai/Traffic_Light_Detector/blob/main/label_map.pbtxt.txt
+
+Some test image results can be found [here](https://github.com/pratzz/CarND-Capstone/tree/master/images/test%20predictions) </br>
+Training graphs can be found [here](https://github.com/pratzz/CarND-Capstone/tree/master/images/graphs)
 
 ## Planning
 ### Waypoint Loader
