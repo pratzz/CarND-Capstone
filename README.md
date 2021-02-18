@@ -79,6 +79,7 @@ Once messages are being published to `/final_waypoints`, the vehicle's waypoint 
 ### Waypoint Follower ###
 This package containing code from [Autoware](https://github.com/CPFL/Autoware) which subscribes to `/final_waypoints` and publishes target vehicle linear and angular velocities in the form of twist commands to the `/twist_cmd` topic.
 
+## Result ##
 You can see a video of the car driving [here](https://drive.google.com/file/d/12lf-XgZZydiGOqLZ5wWNdB-LzSx2UQxk/view?usp=sharing)
 
 ## Native Installation
