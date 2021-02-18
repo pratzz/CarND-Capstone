@@ -25,7 +25,7 @@ Following the state-of-car architecture for self-driving cars, Carla's archictur
 
 ## Perception
 ### Traffic Light Detection
- The detector tries to find the closest traffic light to the car, classify it's state(RED, YELLOW, GREEN) and in case of a RED light, it publishes it's waypoint to /traffic_waypoint. 
+ The detector tries to find the closest traffic light to the car, classify it's state(RED, YELLOW, GREEN) and in case of a RED light, it publishes it's waypoint to `/traffic_waypoint`. 
 #### Dataset
 The original data is raw without labels or annotations, we found this dataset where the images were annotated and converted to TFRecord, hence we used it to train the object detector The data can be found [here](https://github.com/vatsl/TrafficLight_Detection-TensorFlowAPI#get-the-dataset). We have trained only for simulator data but same can be done for real data.
 
