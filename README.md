@@ -12,6 +12,11 @@ In this project our team developed a integrated system using ROS, composed by th
 [//]: # (Image References)
 
 [image1]: ./images/final-project-ros-graph.png "Carla's System Architecture"
+[image2]: ./images/test%20predictions/1.png "Test Prediction 1"
+[image3]: ./images/test%20predictions/2.png "Test Prediction 2"
+[image4]: ./images/test%20predictions/3.png "Test Prediction 3"
+[image5]: ./images/graphs/loss.png "Loss"
+[image6]: ./images/graphs/mAP.png "mAP"
 
 ## Architecture Overview
 
@@ -36,8 +41,18 @@ Steps to train: https://github.com/tensorflow/models/blob/master/research/object
 Pipeline Config (Tensorflow Object Detection API) used: https://github.com/jnsagai/Traffic_Light_Detector/blob/main/traffic_light_classification.config </br>
 Label Map Used: https://github.com/jnsagai/Traffic_Light_Detector/blob/main/label_map.pbtxt.txt
 
-Some test image results can be found [here](https://github.com/pratzz/CarND-Capstone/tree/master/images/test%20predictions) </br>
-Training graphs can be found [here](https://github.com/pratzz/CarND-Capstone/tree/master/images/graphs)
+Some test image results:
+
+![alt text][image2]
+
+![alt text][image3]
+
+![alt text][image4]
+
+Training graphs:
+![alt text][image5]
+
+![alt text][image6]
 
 ## Planning
 ### Waypoint Loader
